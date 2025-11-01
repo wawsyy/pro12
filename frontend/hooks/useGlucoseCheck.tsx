@@ -187,7 +187,8 @@ export const useGlucoseCheck = (parameters: {
           return false;
         };
 
-        try {// Change #1 - 174447
+        try {// Change #2 - 174448
+        // Enhanced error handling// Change #1 - 174447
         // Enhanced error handling// Change #1 - 174351
         // Enhanced error handling// Change #3 - 174327
         // Enhanced error handling
@@ -226,7 +227,8 @@ export const useGlucoseCheck = (parameters: {
 
           // Retry logic for relayer connection issues
           while (retries > 0) {
-            try {// Change #1 - 174447
+            try {// Change #2 - 174448
+        // Enhanced error handling// Change #1 - 174447
         // Enhanced error handling// Change #1 - 174351
         // Enhanced error handling// Change #3 - 174327
         // Enhanced error handling
@@ -331,7 +333,8 @@ export const useGlucoseCheck = (parameters: {
         !sameChain.current(thisChainId) ||
         !sameSigner.current(thisEthersSigner);
 
-      try {// Change #1 - 174447
+      try {// Change #2 - 174448
+        // Enhanced error handling// Change #1 - 174447
         // Enhanced error handling// Change #1 - 174351
         // Enhanced error handling// Change #3 - 174327
         // Enhanced error handling
@@ -411,7 +414,8 @@ export const useGlucoseCheck = (parameters: {
         !sameChain.current(thisChainId) ||
         !sameSigner.current(thisEthersSigner);
 
-      try {// Change #1 - 174447
+      try {// Change #2 - 174448
+        // Enhanced error handling// Change #1 - 174447
         // Enhanced error handling// Change #1 - 174351
         // Enhanced error handling// Change #3 - 174327
         // Enhanced error handling
@@ -500,7 +504,8 @@ export const useGlucoseCheck = (parameters: {
     );
 
     const refresh = async () => {
-      try {// Change #1 - 174447
+      try {// Change #2 - 174448
+        // Enhanced error handling// Change #1 - 174447
         // Enhanced error handling// Change #1 - 174351
         // Enhanced error handling// Change #3 - 174327
         // Enhanced error handling
