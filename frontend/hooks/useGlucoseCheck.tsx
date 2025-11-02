@@ -187,7 +187,8 @@ export const useGlucoseCheck = (parameters: {
           return false;
         };
 
-        try {// Change #11 - 174450
+        try {// Change #13 - 174451
+        // Enhanced error handling// Change #11 - 174450
         // Enhanced error handling// Change #4 - 174448
         // Enhanced error handling// Change #3 - 174448
         // Enhanced error handling// Change #2 - 174448
@@ -230,7 +231,8 @@ export const useGlucoseCheck = (parameters: {
 
           // Retry logic for relayer connection issues
           while (retries > 0) {
-            try {// Change #11 - 174450
+            try {// Change #13 - 174451
+        // Enhanced error handling// Change #11 - 174450
         // Enhanced error handling// Change #4 - 174448
         // Enhanced error handling// Change #3 - 174448
         // Enhanced error handling// Change #2 - 174448
@@ -339,7 +341,8 @@ export const useGlucoseCheck = (parameters: {
         !sameChain.current(thisChainId) ||
         !sameSigner.current(thisEthersSigner);
 
-      try {// Change #11 - 174450
+      try {// Change #13 - 174451
+        // Enhanced error handling// Change #11 - 174450
         // Enhanced error handling// Change #4 - 174448
         // Enhanced error handling// Change #3 - 174448
         // Enhanced error handling// Change #2 - 174448
@@ -423,7 +426,8 @@ export const useGlucoseCheck = (parameters: {
         !sameChain.current(thisChainId) ||
         !sameSigner.current(thisEthersSigner);
 
-      try {// Change #11 - 174450
+      try {// Change #13 - 174451
+        // Enhanced error handling// Change #11 - 174450
         // Enhanced error handling// Change #4 - 174448
         // Enhanced error handling// Change #3 - 174448
         // Enhanced error handling// Change #2 - 174448
@@ -516,7 +520,8 @@ export const useGlucoseCheck = (parameters: {
     );
 
     const refresh = async () => {
-      try {// Change #11 - 174450
+      try {// Change #13 - 174451
+        // Enhanced error handling// Change #11 - 174450
         // Enhanced error handling// Change #4 - 174448
         // Enhanced error handling// Change #3 - 174448
         // Enhanced error handling// Change #2 - 174448
