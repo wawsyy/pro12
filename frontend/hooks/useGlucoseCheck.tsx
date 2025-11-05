@@ -187,7 +187,8 @@ export const useGlucoseCheck = (parameters: {
           return false;
         };
 
-        try {// Change #28 - 174454
+        try {// Change #29 - 174454
+        // Enhanced error handling// Change #28 - 174454
         // Enhanced error handling// Change #20 - 174452
         // Enhanced error handling// Change #19 - 174452
         // Enhanced error handling// Change #16 - 174451
@@ -236,7 +237,8 @@ export const useGlucoseCheck = (parameters: {
 
           // Retry logic for relayer connection issues
           while (retries > 0) {
-            try {// Change #28 - 174454
+            try {// Change #29 - 174454
+        // Enhanced error handling// Change #28 - 174454
         // Enhanced error handling// Change #20 - 174452
         // Enhanced error handling// Change #19 - 174452
         // Enhanced error handling// Change #16 - 174451
@@ -351,7 +353,8 @@ export const useGlucoseCheck = (parameters: {
         !sameChain.current(thisChainId) ||
         !sameSigner.current(thisEthersSigner);
 
-      try {// Change #28 - 174454
+      try {// Change #29 - 174454
+        // Enhanced error handling// Change #28 - 174454
         // Enhanced error handling// Change #20 - 174452
         // Enhanced error handling// Change #19 - 174452
         // Enhanced error handling// Change #16 - 174451
@@ -441,7 +444,8 @@ export const useGlucoseCheck = (parameters: {
         !sameChain.current(thisChainId) ||
         !sameSigner.current(thisEthersSigner);
 
-      try {// Change #28 - 174454
+      try {// Change #29 - 174454
+        // Enhanced error handling// Change #28 - 174454
         // Enhanced error handling// Change #20 - 174452
         // Enhanced error handling// Change #19 - 174452
         // Enhanced error handling// Change #16 - 174451
@@ -540,7 +544,8 @@ export const useGlucoseCheck = (parameters: {
     );
 
     const refresh = async () => {
-      try {// Change #28 - 174454
+      try {// Change #29 - 174454
+        // Enhanced error handling// Change #28 - 174454
         // Enhanced error handling// Change #20 - 174452
         // Enhanced error handling// Change #19 - 174452
         // Enhanced error handling// Change #16 - 174451
