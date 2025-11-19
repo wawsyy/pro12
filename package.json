@@ -1,6 +1,5 @@
 ﻿{
-  // Change #5 - 174449
-    "name: "encrypted-glucose-check",
+  "name": "encrypted-glucose-check",
   "description": "Encrypted Glucose Risk Assessment using FHEVM",
   "version": "0.1.0",
   "engines": {
