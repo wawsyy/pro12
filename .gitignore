@@ -15,6 +15,11 @@ types
 deployments
 tmp
 
+# Next.js
+frontend/.next
+frontend/.next/**
+frontend/out
+
 # files
 *.env
 *.log
