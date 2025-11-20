@@ -58,6 +58,11 @@ export const GlucoseCheckDemo = () => {
 
   const provider = publicClient?.transport as ethers.Eip1193Provider | undefined;
 
+  // Only use mock chains for local development (chainId 31337)
+  const initialMockChains = chainId === 31337 
+    ? { 31337: "http://localhost:8545" } 
+    : undefined;
+
   const {
     instance: fhevmInstance,
     status: fhevmStatus,
@@ -65,7 +70,7 @@ export const GlucoseCheckDemo = () => {
   } = useFhevm({
     provider,
     chainId,
-    initialMockChains: { 31337: "http://localhost:8545" },
+    initialMockChains,
     enabled: true,
   });
 
@@ -213,34 +218,7 @@ export const GlucoseCheckDemo = () => {
         </div>
       )}
 
-      <div className="col-span-full bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
-        <p className={titleClass}>Status</p>
-        <p className="text-white/80">
-          Contract: {glucoseCheck.contractAddress ? `${glucoseCheck.contractAddress.slice(0, 6)}...${glucoseCheck.contractAddress.slice(-4)}` : "Not deployed"}
-        </p>
-        <p className="text-white/80">Chain ID: {chainId} {chainId === 31337 ? "(Hardhat)" : chainId === 11155111 ? "(Sepolia)" : ""}</p>
-        <p className="text-white/80">Address: {address ? `${address.slice(0, 6)}...${address.slice(-4)}` : "Not connected"}</p>
-        <p className="text-white/80">FHEVM Status: {fhevmStatus}</p>
-        <p className="text-white/80 text-xs mt-2">Is Deployed: {glucoseCheck.isDeployed === undefined ? "Checking..." : glucoseCheck.isDeployed ? "Yes" : "No"}</p>
-        <p className="text-white/80 text-xs mt-2">Can Submit: {glucoseCheck.canSubmit ? "Yes" : "No"} {!glucoseCheck.canSubmit && (
-          <span className="text-yellow-300">
-            ({!glucoseCheck.contractAddress ? "No contract" : ""}
-            {!fhevmInstance ? " No FHEVM" : ""}
-            {!ethersSigner ? " No signer" : ethersSigner && !ethersSigner.address ? " No signer address" : ""}
-            {glucoseCheck.isSubmitting ? " Submitting" : ""}
-            {glucoseCheck.isChecking ? " Checking" : ""})
-          </span>
-        )}</p>
-        <p className="text-white/80 text-xs mt-1">Debug: contract={glucoseCheck.contractAddress ? "✓" : "✗"} fhevm={fhevmInstance ? "✓" : "✗"} signer={ethersSigner?.address ? "✓" : "✗"} value={glucoseValue || "empty"}</p>
-        {fhevmError && (
-          <p className="text-red-300 mt-2">FHEVM Error: {fhevmError.message}</p>
-        )}
-        {glucoseCheck.message && (
-          <p className="text-white/80 mt-2 p-2 bg-white/10 rounded">
-            {glucoseCheck.message}
-          </p>
-        )}
-      </div>
+      {/* 系统状态区域已隐藏 */}
     </div>
   );
 };

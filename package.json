@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "encrypted-glucose-check",
   "description": "Encrypted Glucose Risk Assessment using FHEVM",
   "version": "0.1.0",
